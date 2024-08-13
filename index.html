@@ -3,231 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="miko.png" type="image/png">
+    <title>MikoInSpace</title>
     <style>
-        /* Add animation keyframes for fade-in */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Apply fade-in animation to header, section, and nav elements */
-        header, section, nav {
-            animation: fadeIn 1s ease-out;
-        }
-
-        /* Reset some default browser styles */
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background: url('space-background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://mikoInSpace.github.io/assets/space_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
         }
 
-        /* Style for the header, making it smaller and centered */
         header {
-            position: relative;
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
-            color: #fff;
             text-align: center;
-            padding: 2em 0;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            max-width: 95%; /* Limit the width to 95% */
-            margin: 0 auto; /* Center the header */
+            padding: 2rem 0;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            position: relative;
         }
 
-        header h1 {
-            margin: 0;
+        h1 {
             font-size: 3rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.2s ease; /* Add transition */
-        }
-
-        header h1:hover {
-            transform: scale(1.1); /* Slightly scale up on hover */
-        }
-
-        header img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            transition: transform 0.2s ease; /* Add transition */
-        }
-
-        header img:hover {
-            transform: scale(1.1); /* Slightly scale up on hover */
-        }
-
-        header p {
-            transition: transform 0.2s ease; /* Add transition */
-            font-size: 1.2rem;
-            margin-top: 1rem;
-        }
-
-        header p:hover {
-            transform: scale(1.05); /* Slightly scale up on hover */
-        }
-
-        /* Hide the navigation bar */
-        nav {
-            display: none;
-        }
-
-        /* Style for the section, making them smaller and centered */
-        section {
-            padding: 40px;
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
-            border-radius: 20px;
-            margin: 10px auto; /* Center sections horizontally */
-            color: #ffffff; /* Text color */
-            transition: background-color 0.3s ease, transform 0.2s ease; /* Add transitions */
-            max-width: 95%; /* Limit the width to 95% */
-        }
-
-        /* Darken the section background color when hovering */
-        section:hover {
-            background-color: rgba(0, 0, 0, 0.8); /* Darker shade for hover effect */
-            transform: scale(1.005); /* Slightly scale up on hover */
-        }
-
-        h2 {
-            color: #ffffff;
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
+            margin: 0;
+            padding-bottom: 1rem;
         }
 
         p {
-            margin-bottom: 1.5em;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
         }
 
-        ul {
-            list-style: none;
+        section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-top: 1.5rem;
+        }
+
+        .section-spacing {
+            margin-top: 2rem;
         }
 
         a {
+            color: #6dc6ff;
             text-decoration: none;
-            color: #4db8ff;
-            transition: color 0.3s ease; /* Add transition*/
         }
 
         a:hover {
-            color: #3399ff;
             text-decoration: underline;
         }
-                 
-        /* Center align content */
-        .center {
-            text-align: center;
-        }
 
-        /* Add spacing between sections */
-        .section-spacing {
-            margin-top: 40px;
-        }
-        
-        /* Center align the Discord widget */
-        iframe {
-            display: block;
-            margin: 0 auto;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
         }
     </style>
-    <title>MikoInSpace - Personal Website</title>
 </head>
 <body>
     <header>
-        <h1>
-            <img src="miko.png" alt="Profile Picture">
-            MikoInSpace
-        </h1>
-        <p>🌱 I'm currently learning Rocket Science!</p>
-        <p>📫 Reach me by messaging me on <a href="https://discord.com">Discord</a>, My username on there is '<strong>mikoinspace</strong>'.</p>
-        <p>📰 Writing blog posts all about space and rockets at <a href="https://mikoinspaceblog.github.io">mikoinspaceblog.github.io</a></p>
+        <img src="https://mikoInSpace.github.io/assets/mikoinspsace_logo.png" alt="MikoInSpace Logo" style="width: 150px;">
+        <h1>MikoInSpace</h1>
+        <p>🚀 I'm currently learning Rocket Science!</p>
+        <p>📧 Reach me by messaging me on <a href="https://discord.com">Discord</a>, My username on there is <strong>'mikoinspace'</strong>.</p>
+        <p>📖 Writing blog posts all about space and rockets at <a href="https://mikoInSpaceblog.github.io">mikoInSpaceblog.github.io</a></p>
     </header>
 
-    <section id="about" class="section-spacing">
+    <section class="section-spacing">
         <h2>About Me</h2>
-        <ul>
-            <li>👩 I'm a <strong>13-year-old</strong> Female Autistic Space and Rocket Enthusiast from 🇩🇪 Germany.</li>
-            <li>📚 I'm currently learning more about the <a href="https://en.wikipedia.org/wiki/Apollo_%28spacecraft%29">Apollo Capsule</a> and how to fly it.</li>
-        </ul>
+        <p>👧 I'm a <strong>13-year-old</strong> Female Autistic Space and Rocket Enthusiast from 🇩🇪 Germany.</p>
+        <p>🛰️ I'm currently learning more about the <a href="https://en.wikipedia.org/wiki/Apollo_Command/Service_Module">Apollo Capsule</a> and how to fly it.</p>
     </section>
 
-    <section>
+    <section class="section-spacing">
         <h2>Projects</h2>
-        <ul>
-            <li>📡 <a href="https://mikoinspaceblog.github.io/Space/Satellites/How-to-get-Satellite-Imagery.html">Receiving Satellite Imagery</a>.</li>
-        </ul>
-    </section>
-
-    <section id="donate" class="section-spacing">
-        <h2>Donate</h2>
-        <p><strong>MAKE SURE TO ONLY SEND THE SPECIFIED CURRENCY TO THE ADDRESSES</strong></p>
-        <p><strong>ANY OTHER CURRENCY WILL BE LOST</strong></p>
-        <ul>
-            <li>💰 KoFi: <a href="https://ko-fi.com/mikoinspace">MikoInSpace</a></li>
-            <li>💰 Bitcoin (BTC): <code>bc1qesj2dzp4p7mnnyf8rhqpa4l82xl49ngepcvkf5</code></li>
-            <li>💰 Bitcoin Cash (BCH): <code>bitcoincash:qqtcalj6ky6fckwsthfy7u6aru388lkm45p4raqgk3</code></li>
-            <li>💰 Ethereum (ETH): <code>0xd0Af6A651739fbD7BE2309005C8A6566EB3ba913</code></li>
-            <li>💰 Dogecoin (DOGE): <code>A6f3NpcRc9VD5qpUGvyyycoRRt8dLpPEeZ</code></li>
-        </ul>
-    </section>
-
-    <section id="setup" class="section-spacing">
-        <h2>My Setup</h2>
-        <details>
-            <summary><strong>My Setup</strong> (Click to Expand/Collapse)</summary>
-            <div>
-                <h3>Desktop PC</h3>
-                <ul>
-                    <li><strong>CPU:</strong> Intel <strong>I5-10400F</strong></li>
-                    <li><strong>GPU:</strong> GigaByte <strong>NVIDIA GeForce RTX 3060</strong> Gaming OC</li>
-                    <li><strong>RAM:</strong> <strong>32GB</strong> 3200MHz</li>
-                </ul>
-                <h4>Peripherals</h4>
-                <ul>
-                    <li><strong>Keyboard:</strong> Corsair K55 RGB</li>
-                    <li><strong>Mouse:</strong> Glorious Model O</li>
-                </ul>
-                <h4>System</h4>
-                <ul>
-                    <li><strong>Operating System:</strong> Windows 10</li>
-                    <li><strong>IDE:</strong> Visual Studio Code</li>
-                </ul>
-            </div>
-        </details>
-        <details>
-            <summary><strong>Laptop</strong> (Click to Expand/Collapse)</summary>
-            <div>
-                <ul>
-                    <li><strong>CPU:</strong> AMD Ryzen 5 2500U</li>
-                    <li><strong>GPU:</strong> AMD Radeon Vega 8</li>
-                    <li><strong>RAM:</strong> 12GB</li>
-                </ul>
-                <h4>System</h4>
-                <ul>
-                    <li><strong>Operating System:</strong> Zorin OS</li>
-                    <li><strong>IDE:</strong> Visual Studio Code</li>
-                </ul>
-            </div>
-        </details>
+        <p>🔭 <a href="https://mikoInSpace.github.io/receiving-satellite-imagery">Receiving Satellite Imagery</a></p>
     </section>
 
     <section id="discord" class="section-spacing">
