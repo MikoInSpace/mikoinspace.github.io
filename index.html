@@ -38,15 +38,16 @@
             padding: 0;
         }
 
+        /* Style for the header, making it smaller and centered */
         header {
             position: relative;
             background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
             color: #fff;
             text-align: center;
-            padding: 1.9em 0; /* Reduced padding */
+            padding: 2em 0;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-            max-width: 95%; /* Set a max-width */
+            max-width: 95%; /* Limit the width to 95% */
             margin: 0 auto; /* Center the header */
         }
 
@@ -90,14 +91,15 @@
             display: none;
         }
 
+        /* Style for the section, making them smaller and centered */
         section {
-            padding: 38px; /* Reduced padding */
+            padding: 40px;
             background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
             border-radius: 20px;
-            margin: 10px auto; /* Center the section */
+            margin: 10px auto; /* Center sections horizontally */
             color: #ffffff; /* Text color */
             transition: background-color 0.3s ease, transform 0.2s ease; /* Add transitions */
-            max-width: 95%; /* Set a max-width */
+            max-width: 95%; /* Limit the width to 95% */
         }
 
         /* Darken the section background color when hovering */
@@ -123,7 +125,7 @@
         a {
             text-decoration: none;
             color: #4db8ff;
-            transition: color 0.3s ease; /* Add transition */
+            transition: color 0.3s ease; /* Add transition*/
         }
 
         a:hover {
@@ -228,18 +230,10 @@
         </details>
     </section>
 
-    <section id="links" class="section-spacing">
-        <h2>GitHub Stats</h2>
-        <p align="center">
-            <img src="https://github-readme-stats.vercel.app/api?username=MikoInSpace&theme=dark" width="32%">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=MikoInSpace&theme=dark" width="35%">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MikoInSpace&theme=dark&layout=compact" width="25%">
-        </p>
+    <section id="discord" class="section-spacing">
+        <h2>Join My Discord</h2>
+        <p>Come hang out and chat about space, rockets, and everything in between!</p>
+        <iframe src="https://discord.com/widget?id=1234567890&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
     </section>
-
-    <div class="center">
-        <iframe src="https://discord.com/widget?id=1143923214347681842&theme=dark" width="350" height="500" position="center" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        <p>Made with <img src="html.png" alt="HTML Icon" height="1%" width="1%"> by <a href="https://github.com/mikoinspace">MikoInSpace</a></p>
-    </div>
 </body>
 </html>
